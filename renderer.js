@@ -19,12 +19,12 @@ let size = 45
 let baseTxtX = 15
 let baseTxtY = 34
 
-let canvas = document.getElementById("sudoku")
+let canvas = document.getElementById('sudoku')
 
 // canvas.style.width = (bw + 1) + 'px';
 // canvas.style.height = (bh + 1) + 'px';
 
-let context = canvas.getContext("2d")
+let context = canvas.getContext('2d')
 
 
 
@@ -33,7 +33,7 @@ let index = 0
 
 function findSolutionSudoku(string){
   if(!string)
-    alert('Musisz podać string!')
+    alert('You have to pass string!')
 
   let time = new Date()
   let state = new SudokuState(string)
@@ -76,7 +76,7 @@ function drawSudoku(){
       context.lineTo(bw + p, 0.5 + x + p)
   }
   context.lineWidth=1
-  context.strokeStyle = "black"
+  context.strokeStyle = 'black'
   context.stroke()
 
 
@@ -95,10 +95,10 @@ function drawSudoku(){
   context.moveTo(0,canvas.height*2/3)
   context.lineTo(canvas.width,canvas.height*2/3)
 
-  context.strokeStyle = "black"
+  context.strokeStyle = 'black'
   context.stroke()
 
-  context.font = "30px Arial"
+  context.font = '30px Arial'
 
   // uzupelnianie wartoscami array
   // sudokuArray = []
