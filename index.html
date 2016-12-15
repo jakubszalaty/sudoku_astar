@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sudoku</title>
+    <style>
+      #sudoku{
+        /*border:1px solid #000000;*/
+        background: #EEE;
+        margin: 0 auto;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <p> Czas rozwiązywania: <span id="time"></span> <span id="step"></span></p>
+    <canvas id="sudoku" width="406" height="406"></canvas>
+    <!-- <canvas id="sudoku"></canvas> -->
+
+    <div style="margin-top: 20px;">
+
+      <div>
+        <label for="data">81 cyfr sudoku</label>
+        <input id="data" type="text" value="805020630470090052200358004047902500001407026026100047030249710104073200750000403">
+      </div>
+
+      <button id="draw">Draw</button>
+      <button id="reverse">Reverse</button>
+      <button id="prev">Prev</button>
+      <button id="next">Next</button>
+    </div>
+
+
+  </body>
+  <script>
+    // jshint esversion: 6
+    // jshint asi: true
+    // You can also require other files to run in this process
+
+    require('./renderer.js')
+
+  </script>
+</html>
